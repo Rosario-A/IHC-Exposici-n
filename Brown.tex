@@ -1,0 +1,144 @@
+\documentclass[11pt]{beamer}
+\usepackage{listings} % Include the listings-package
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%\usepackage{authblk}
+\usepackage{blindtext}
+\usepackage{booktabs} % Allows the use of \toprule, 
+\usepackage{filecontents}
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings}
+\usepackage{ragged2e}
+%\usepackage{listings, xcolor}
+\lstset{
+tabsize = 2, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{green}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\definecolor{urlColor}{rgb}{0.06, 0.3, 0.57}
+\definecolor{linkColor}{rgb}{0.57, 0.0, 0.04}
+\definecolor{fileColor}{rgb}{0.0, 0.26, 0.26}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    filecolor=fileColor,      
+    urlcolor=urlColor,
+}
+\urlstyle{same}
+\setbeamercovered{transparent}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Berkeley}
+%\usetheme{Warsaw}
+%\usetheme{Madrid}
+
+\title[Introducción]{\bf\Huge C. Marlin "Lin" Brown}
+\subtitle{Interacción Humano Computador}
+
+\author[rescobedoq]
+{
+    INTEGRANTES:
+	\newline Gabriel Callo Condori 
+	\newline José Rodríguez Mercado
+	\newline José Miguel Vera Mamani
+	\newline Rosario Lohana Alegre Linares
+}
+\institute[UNSA]
+{
+\inst{1}% 
+System Engineering School\\
+System Engineering and Informatic Department\\
+Production and Services Faculty\\
+San Agustin National University of Arequipa
+}
+
+\date[2020-09-09]{\scriptsize{2020-09-15}}
+\logo{\includegraphics[width=3.0cm]{logo_unsa.jpg}}
+%\titlegraphic{\includegraphics[width=4.5cm]{logo_unsa.jpg}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Content}
+\tableofcontents
+\end{frame}
+
+\section{Conociendo a Brown}
+\begin{frame}
+\frametitle{Conociendo a Brown}
+\begin{itemize}
+\item Trabajó con tecnologías emergentes en Xerox Palo Alto Research Center.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.3\textwidth]{palo.jpg} 
+\end{figure}
+
+\item Obtuvo un Doctorado del Instituto de Tecnología de Georgia en Psicología de la Ingeniería de Factores Humanos.
+\item Enseñó en Gestión de Sistemas y Factores Humanos.
+
+\end{itemize}
+\end{frame}
+
+\section{Aportes}
+\begin{frame}
+\frametitle{Aportes}
+\begin{minipage}[c]{0.4\textwidth} 
+\includegraphics[width=4.5cm, height=6cm]{libro de marlin.jpg} 
+\end{minipage}
+\begin{minipage}[c]{0.55\textwidth} 
+{\bf Pautas de diseño de la Interfaz Humano-Computador:}
+\newline Es un libro clásico que contiene cientos de pautas prácticas y reglas generales para ayudar a los diseñadores de software a desarrollar interfaces Humano-Computadora orientadas al usuario.
+Se puede encontrar un conjunto de sugerencias para ayudar a los diseñadores de la interfaz a comprender la relación entre los sistemas informáticos y sus usuarios.
+\end{minipage} 
+\end{frame}
+
+\section{}
+\begin{frame}
+Estas sugerencias y pautas se extraen de: 
+\begin{itemize}
+\item Evidencia de experimentos
+\item Predicciones de las teorías del desempeño humano
+\item Principios de psicología cognitiva
+\item Principios de diseño ergonómico
+\item Evidencia recopilada a través de la experiencia en ingeniería
+\end{itemize}
+
+\justifying \vspace{5mm} Muchas pautas van acompañadas de ejemplos. {\bf Un capítulo final presenta una estrategia para implementar los principios de diseño de la interfaz Humano-Computadora.}
+
+\end{frame}
+
+
+\section{References}
+%References frame
+\begin{frame}
+\frametitle{References}
+\begin{itemize}
+\item Introduction - xiii, Jhonson J. (2014). Designing with the Mind in mind. 2nd. edition.
+\item Introduction, C. Marlin Brown (1999). Human–computer interface design guidelines.
+\end{itemize}
+\end{frame}
+
+\end{document}
